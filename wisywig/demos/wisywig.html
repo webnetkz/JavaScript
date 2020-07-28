@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>WisyWig</title>
+</head>
+<body>
+
+<div id="menu"></div>
+
+
+<br />
+
+<div id="sample">
+<script type="text/javascript" src="../nicEdit.js"></script>
+<script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
+
+
+<textarea name="area1" style="width: 1190px; height: 400px;"></textarea>
+<br />
+
+<script>
+	function showConsole(elem) {
+		console.log(elem.value);
+	}
+</script>
+
+<style>
+	#sample {
+		margin-left: calc((100% - 1190px) / 2);
+		margin-right: calc((100% - 1194px) / 2);
+		box-shadow: 0 0 10px black;
+	}
+	.nicEdit-main {
+		padding: 5px;
+		outline: none;
+	}
+	.nicEdit-button {
+		zoom: 2;
+	}
+</style>
+
+</body>
+</html>
